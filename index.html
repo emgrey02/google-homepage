@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<style>
+    body {
+        font-size: 14px;
+        font-family: arial, sans-serif;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
+    }
+
+    .logo {
+        align-self: center;
+        margin-top: 250px;
+    }
+
+    .searchbar {
+        width: auto;
+        height: auto;
+        align-self: center;
+        padding: 20px;
+    }
+
+    input {
+       padding: 5px;
+       padding-left: 40px;
+       width: 500px;
+       height: 40px;
+       border-radius: 30px;
+       border-width: 1px;
+       border-color:rgb(149, 151, 151);
+       box-shadow:aliceblue;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .first-block, .second-block {
+        width: auto;
+        padding: 20px 0;
+    }
+
+    .item {
+        margin: 0 20px 0 10px;
+    }
+
+    #sign-in {
+        padding: 10px 25px;
+        background: #1a73e8;
+        color: #ffffff;
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        margin: 0 10px;
+        padding: 10px 20px;
+        background: #f8f9fa;
+        border: transparent;
+    }
+
+    #search {
+        opacity: 60%;
+        position: fixed;
+        margin: 15px 0 0 10px;
+    }
+
+
+</style>
+
+
+<html> 
+    <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <title>Google</title>
+    </head>
+
+    <div class="container">
+        <div class="header">
+            <div class="first-block">
+                <a class="item" id="about" href="#">About</a>
+                <a class="item" id="store" href="#">Store</a>
+            </div>
+            <div class="second-block">
+                <a class="item" id="gmail" href="#">Gmail</a>
+                <a class="item" id="images" href="#">Images</a>
+                <a class="item" id="sign-in"href="#">Sign in</a>
+                
+            </div>
+        </div>
+        <div class="logo">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+        </div>
+        <div class="searchbar">
+            <form action="https://google.com">
+                <span id="search" class="material-icons">
+                    search
+                </span>
+                <input type="text">
+            </form>
+        </div>
+        <div class="buttons">
+            <button type="button" name="Google Search">Google Search</button>
+            <button type="button" name="Feeling Lucky">I'm Feeling Lucky</button>
+        </div>
+    </div>
+</html>
