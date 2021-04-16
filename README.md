@@ -1,0 +1,2 @@
+# Google Homepage Project
+In this project, I deconstruct google's homepage and rebuild it with just html. It won't be colorful or interactive, since I won't be creating a css page or javascript page. This helps me actively learn how html works.
