@@ -1,2 +1,2 @@
 # Google Homepage Project
-In this project, I deconstruct google's homepage and rebuild it with just html. It won't be colorful or interactive, since I won't be creating a css page or javascript page. This helps me actively learn how html works.
+In this project, I look at google's home page and use mozilla firefox's dev tools to recreate it on my own in an index.html file. This file includes html and css using style tags, to make it look like but not necessarily act like google's homepage. This will help me learn and refine my html/css skills. Contains a header, search bar, buttons, and a footer. Flex boxes galore.
