@@ -14,7 +14,6 @@
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-
     }
 
     .logo {
@@ -80,6 +79,15 @@
         margin: 15px 0 0 10px;
     }
 
+    footer {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+    }
 
 </style>
 
@@ -90,34 +98,51 @@
       rel="stylesheet">
         <title>Google</title>
     </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <div class="first-block">
+                    <a class="item" id="about" href="#">About</a>
+                    <a class="item" id="store" href="#">Store</a>
+                </div>
+                <div class="second-block">
+                    <a class="item" id="gmail" href="#">Gmail</a>
+                    <a class="item" id="images" href="#">Images</a>
+                    <a class="item" id="sign-in"href="#">Sign in</a>
+                    
+                </div>
+            </header>
+            <div class="logo">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+            </div>
+            <div class="searchbar">
+                <form action="https://google.com">
+                    <span id="search" class="material-icons">
+                        search
+                    </span>
+                    <input type="text">
+                </form>
+            </div>
+            <div class="buttons">
+                <button type="button" name="Google Search">Google Search</button>
+                <button type="button" name="Feeling Lucky">I'm Feeling Lucky</button>
+            </div>
+        </div>
 
-    <div class="container">
-        <div class="header">
+        <footer>
             <div class="first-block">
-                <a class="item" id="about" href="#">About</a>
-                <a class="item" id="store" href="#">Store</a>
+                <a class="item" id="advertising" href="#">Advertising</a>
+                <a class="item" id="business" href="#">Business</a>
+                <a class="item" id="How Search works" href="#">How Search works</a>
+            </div>
+            <div class="middle-block">
+                <a class="item" id="carbon" href="#">Carbon neutral since 2007</a>
             </div>
             <div class="second-block">
-                <a class="item" id="gmail" href="#">Gmail</a>
-                <a class="item" id="images" href="#">Images</a>
-                <a class="item" id="sign-in"href="#">Sign in</a>
-                
+                <a class="item" id="privacy" href="#">Privacy</a>
+                <a class="item" id="terms" href="#">Terms</a>
+                <a class="item" id="Settings" href="#">Settings</a>
             </div>
-        </div>
-        <div class="logo">
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
-        </div>
-        <div class="searchbar">
-            <form action="https://google.com">
-                <span id="search" class="material-icons">
-                    search
-                </span>
-                <input type="text">
-            </form>
-        </div>
-        <div class="buttons">
-            <button type="button" name="Google Search">Google Search</button>
-            <button type="button" name="Feeling Lucky">I'm Feeling Lucky</button>
-        </div>
-    </div>
+        </footer>
+    </body>
 </html>
