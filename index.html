@@ -8,6 +8,7 @@
     .container {
         display: flex;
         flex-direction: column;
+        min-height: 500px;
     }
 
     .header {
@@ -16,9 +17,17 @@
         justify-content: space-between;
     }
 
+    .google-search {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
     .logo {
         align-self: center;
-        margin-top: 250px;
+        justify-self: center;
     }
 
     .searchbar {
@@ -29,12 +38,12 @@
     }
 
     input {
-       padding: 5px;
-       padding-left: 40px;
-       width: 500px;
-       height: 35px;
-       border-radius: 30px;
-       border: 1px solid #dfe1e5;
+        padding: 5px;
+        padding-left: 40px;
+        width: 500px;
+        height: 35px;
+        border-radius: 30px;
+        border: 1px solid #dfe1e5;
     }
 
     a {
@@ -42,13 +51,15 @@
         color: black;
     }
 
-    .first-block, .second-block {
+    .first-block,
+    .second-block {
         width: auto;
         padding: 20px 0;
     }
 
     .item {
         margin: 0 20px 0 10px;
+        color: #70757a;
     }
 
     #sign-in {
@@ -78,40 +89,43 @@
     }
 
     footer {
-        position: absolute;
+        position: fixed;
         display: flex;
         justify-content: space-between;
         align-items: center;
         bottom: 0;
         width: 100%;
         height: auto;
+        background: #f2f2f2;
     }
-
 </style>
 
 
-<html> 
-    <head>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-        <title>Google</title>
-    </head>
-    <body>
-        <div class="container">
-            <header class="header">
-                <div class="first-block">
-                    <a class="item" id="about" href="#">About</a>
-                    <a class="item" id="store" href="#">Store</a>
-                </div>
-                <div class="second-block">
-                    <a class="item" id="gmail" href="#">Gmail</a>
-                    <a class="item" id="images" href="#">Images</a>
-                    <a class="item" id="sign-in"href="#">Sign in</a>
-                    
-                </div>
-            </header>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Google</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="first-block">
+                <a class="item" id="about" href="#">About</a>
+                <a class="item" id="store" href="#">Store</a>
+            </div>
+            <div class="second-block">
+                <a class="item" id="gmail" href="#">Gmail</a>
+                <a class="item" id="images" href="#">Images</a>
+                <a class="item" id="sign-in" href="#">Sign in</a>
+
+            </div>
+        </header>
+        <div class="google-search">
             <div class="logo">
-                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                    alt="Google logo">
             </div>
             <div class="searchbar">
                 <form action="https://google.com">
@@ -126,7 +140,6 @@
                 <button type="button" name="Feeling Lucky"><a href="#">I'm Feeling Lucky</a></button>
             </div>
         </div>
-
         <footer>
             <div class="first-block">
                 <a class="item" id="advertising" href="#">Advertising</a>
@@ -142,5 +155,8 @@
                 <a class="item" id="Settings" href="#">Settings</a>
             </div>
         </footer>
-    </body>
+    </div>
+
+</body>
+
 </html>
